@@ -1,0 +1,84 @@
+/* Buttons */
+button {
+    background-color: #ff8ba3; 
+    color: white;
+    border: none;
+    padding: 16px 32px; /* Slightly increased padding for a more comfortable look */
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 16px; /* Rounder corners for a smoother look */
+    font-size: 18px; /* Increased font size for better readability */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #ff6b87;
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Cute Icon Button */
+button.icon-button {
+    background-color: #d4aaff; 
+    padding: 14px 28px; /* Adjusted padding for better balance */
+    border-radius: 16px; /* Consistent rounded corners */
+    font-size: 18px; /* Increased font size for better legibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; /* Slightly more space between icon and text */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+}
+
+button.icon-button:hover {
+    background-color: #bfa6ff;
+    transform: scale(1.05); /* Subtle scaling effect on hover */
+}
+
+/* Close/Delete Button (X icon) */
+.delete-button {
+    position: absolute; /* Position it relative to the parent box */
+    top: -18px; /* Adjusted for slightly higher position inside the box */
+    right: 4px; /* Right aligned to the parent box */
+    width: 20px; /* Size of the button */
+    height: 20px; /* Size of the button */
+    background-color: #f44336; /* Red color for delete */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer;
+    padding: 0; /* No extra padding */
+    text-align: center;
+    display: flex; /* Flex to center the icon */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
+.delete-button:hover {
+    background-color: #d32f2f;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15); /* Enhanced hover shadow for a better effect */
+}
+
+/* Ensure the X icon stays small and in the top-right corner */
+.delete-button i {
+    font-size: 14px; /* Icon size adjusted for the slightly larger button */
+}
+
+/* Resize Handle */
+.resize-handle {
+    width: 20px;
+    height: 20px;
+    background-color: #ffb5fa; 
+    position: absolute;
+    bottom: 2px;
+    right: 4px;
+    cursor: se-resize;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.resize-handle:hover {
+    transform: scale(1.2);
+}

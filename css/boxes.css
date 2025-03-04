@@ -1,0 +1,111 @@
+/* Custom Sections */
+#customSections {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 24px; /* More spaced-out layout */
+    margin-top: 30px;
+}
+
+.section-box {
+    padding: 20px;
+    background: #ffffff;
+    min-width: 150px; /* Smaller default width */
+    max-width: 100%;
+    min-height: 50px;
+    position: relative;
+    cursor: move;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    color: #3c3c3c;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    resize: none;
+    width: auto; /* Allows resizing but prevents it from being too wide */
+    max-width: 100%;
+    background-color: #fdfdfd;
+    border: 2px solid #ccc;
+    overflow: hidden; /* Prevents overflow issues */
+    box-sizing: border-box;
+}
+
+.section-text {
+    width: 100%; /* Make sure it takes the full width of the parent */
+    word-wrap: break-word; /* Ensures text wraps within the box */
+    overflow-wrap: break-word; /* Alternative for better compatibility */
+    white-space: normal; /* Allows text to wrap to new lines */
+    display: block; /* Ensures it behaves like a normal text container */
+}
+
+
+/* Ensure paragraph text inside wraps properly */
+.section-box p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    width: 100%;
+}
+/* Section Box Hover */
+.section-box:hover {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+    background: #f7ddff; /* Lighter gray on hover */
+}
+
+
+/* Anonymous Boxes Container (Bottom Corners) */
+#anonBoxesContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative; /* Change from absolute to relative */
+    bottom: 10px;
+    left: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Anonymous Drawing Box */
+#anonDrawBox {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 400px; /* Ensures enough space */
+    background-color: #ffffff;
+    border: 2px solid #311384;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative; /* Keeps it within the flow of the parent */
+    top: -20px; /* Move the box higher */
+    left: -20px; /* Move the box to the left */
+    border-radius: 12px;
+    overflow: visible; /* Allow full visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Title Styling */
+.anon-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Canvas Styling */
+#drawingCanvas {
+    width: 100%; /* Makes the canvas fully fit */
+    height: 100%; /* Adjusts dynamically */
+    border: 2px solid #3c3c3c;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}

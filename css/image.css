@@ -1,0 +1,18 @@
+/* Style for the image container */
+.image-box {
+    display: inline-block;
+    border: 1px solid #ccc;
+    cursor: grab;
+    background: white;
+    position: absolute;
+    overflow: hidden; /* Prevents image overflow */
+    z-index: 10;
+}
+
+/* Style for the image inside the container */
+.custom-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

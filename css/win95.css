@@ -1,0 +1,40 @@
+/* Win95 Window */
+.win95-window {
+    background: #fdfdfd; /* Clean white for a fresh look */
+    border: 2px solid #d4aaff; /* Soft pastel purple border */
+    margin: auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    position: relative;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px; /* More rounded for modern retro feel */
+    overflow: hidden;
+    width: 800px;
+}
+
+/* Title Bar */
+.win95-titlebar {
+    background: #c3b5ff; /* Softer pastel blue */
+    color: #2a2a2a; /* Darker text for contrast */
+    padding: 12px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 6px;
+    font-size: 18px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Window Content */
+.win95-content {
+    background-color: white;
+    padding: 20px;
+    border: none;
+    position: relative;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}

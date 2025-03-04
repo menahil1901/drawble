@@ -1,0 +1,31 @@
+/* Inputs */
+input[type="text"], textarea {
+    padding: 12px;
+    font-size: 14px;
+    width: 100%; /* Allow the input to fill the container, but will respect max-width */
+    max-width: 100%; /* Ensure it doesn't stretch beyond its parent */
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 2px solid #ff8ba3;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    resize: vertical; /* Allow vertical resizing if needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width */
+    overflow-wrap: break-word; /* Ensure text wraps inside the input field */
+}
+
+/* Focused state for inputs */
+input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #ff6b87;
+    box-shadow: 0px 0px 10px rgba(255, 107, 135, 0.6);
+}
+
+/* Ensure text area wraps text properly */
+textarea {
+    overflow-wrap: break-word; /* Ensure text wraps inside the textarea */
+    word-wrap: break-word; /* Older support for text wrapping */
+    white-space: pre-wrap; /* Allow text to wrap and preserve white spaces */
+    resize: none; /* Allow resizing of textarea */
+    box-sizing: border-box; /* Ensure padding and border are included */
+}

@@ -1,0 +1,30 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .win95-window {
+        width: 100%;
+        max-width: 100%;
+        min-height: 500px;
+        padding: 20px;
+    }
+
+    #pagePreview {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    #customizationBar {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .section-box {
+        min-width: 150px;
+        min-height: 150px;
+    }
+
+    #anonDrawBox {
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,45 @@
+/* Style for the social media icon container */
+.social-icon-container {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    position: absolute;  /* Allow free positioning on the screen */
+    text-align: center;  /* Align the image within the container */
+}
+
+/* Style for the individual icons (images) */
+.social-icon-container img {
+    width: 40px;  /* Size of the social media icon */
+    height: 40px;
+    object-fit: contain;  /* Ensure the image maintains its aspect ratio */
+}
+
+/* Facebook styling */
+.facebook-icon {
+    background-color: #3b5998;
+}
+
+/* Twitter styling */
+.twitter-icon {
+    background-color: #1DA1F2;
+}
+
+/* Instagram styling */
+.instagram-icon {
+    background-color: #E1306C;
+}
+
+/* LinkedIn styling */
+.linkedin-icon {
+    background-color: #0077B5;
+}
+
+/* Default icon styling */
+.default-icon {
+    background-color: #ccc;
+}
+

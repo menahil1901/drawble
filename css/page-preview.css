@@ -1,0 +1,17 @@
+/* Page Preview */
+#pagePreview {
+    width: 90%;
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffedf7; /* Softer pastel pink */
+    border: 3px solid #ffc2d1; /* More vibrant pastel pink */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px; /* More rounded corners */
+}
+
+#pagePreview:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}

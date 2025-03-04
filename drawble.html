@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawble Page</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/global-styles.css">
+    <link rel="stylesheet" href="css/win95.css">
+    <link rel="stylesheet" href="css/boxes.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/color-picker.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/page-preview.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/image.css">
+    <link rel="stylesheet" href="css/social-media.css">
+
+
+</head>
+<body>
+
+    <!-- 🔹 Page Creator Section -->
+    <div id="pageCreator">
+        <label for="pageName">Page Name:</label>
+        <input type="text" id="pageName" placeholder="Enter page name">
+
+        <label for="userCode">Unique Code:</label>
+        <input type="text" id="userCode" placeholder="Enter unique code">
+
+        <button onclick="createPage()">Create Page</button>
+    </div>
+
+    <!-- 🔹 Page Editor Section (Initially Hidden) -->
+    <div id="editorContainer" style="display: none;">
+        
+        <!-- Page Preview -->
+        <div id="pagePreview">
+            <div class="win95-window" id="boxContainer">
+                
+                <!-- Window Title Bar -->
+                <div class="win95-titlebar">
+                    <span>Editable Page</span>
+                </div>
+
+                <div class="win95-content">
+                    
+                    <!-- Editable Heading -->
+                    <h4 class="editable-text" contenteditable="true">Heading: You can edit this text</h4>
+
+                    <!-- Custom Sections -->
+                    <div id="customSections"></div>
+
+                    <!-- Anonymous Boxes (Fixed at Bottom Corners) -->
+                    <div id="anonBoxesContainer">
+                        
+                        <!-- Anonymous Messages -->
+                        <div class="message-box">
+                            <h4>Anonymous Messages</h4>
+                            <textarea id="messageInput" placeholder="Send a message..."></textarea>
+                            <button onclick="sendMessage()">Send</button>
+                            <div id="messagesContainer"></div>
+                        </div>
+
+                        <!-- Anonymous Drawing -->
+                        <div class="drawing-box">
+                            <h4 class="anon-title">Anon Drawings</h4>
+                            <canvas id="drawingCanvas"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🔹 Customization Bar -->
+        <div id="customizationBar">
+            
+            <label for="textColorPicker">Text Color:</label>
+            <input type="color" id="textColorPicker" onchange="applyTextColor()">
+
+            <label for="bgColorPicker">Background Color:</label>
+            <input type="color" id="bgColorPicker" onchange="applyBackgroundColor()">
+
+            <button onclick="applyTextFormatting('bold')">Bold</button>
+            <button onclick="applyTextFormatting('italic')">Italic</button>
+            <button onclick="applyTextFormatting('underline')">Underline</button>
+
+            <button onclick="addSocialMediaIcon()">Add Social Media Icon</button>
+            <button onclick="addNewImage()">Add Image</button>
+            <button onclick="addCustomSection()">Add Custom Section</button>
+            <button onclick="savePage()">Save Page</button>
+            <button onclick="publishPage()">Publish Page</button>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/anonCanvas.js"></script>
+    <script src="js/customSection.js"></script>
+    <script src="js/pageManager.js"></script>
+    <script src="js/window.js"></script>
+    <script src="js/customisation.js"></script>
+
+
+</body>
+</html>

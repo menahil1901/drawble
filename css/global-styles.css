@@ -1,0 +1,8 @@
+body {
+    font-family: 'Press Start 2P', cursive; /* Retro gaming aesthetic */
+    background: #fdf7ff; /* Soft pastel lavender background */
+    color: #3c3c3c; /* Dark gray text for contrast */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

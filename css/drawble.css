@@ -1,0 +1,359 @@
+/* Global Styles */
+body {
+    font-family: 'Press Start 2P', cursive; /* Retro gaming aesthetic */
+    background: #fdf7ff; /* Soft pastel lavender background */
+    color: #3c3c3c; /* Dark gray text for contrast */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Preview */
+#pagePreview {
+    width: 90%;
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffedf7; /* Softer pastel pink */
+    border: 3px solid #ffc2d1; /* More vibrant pastel pink */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px; /* More rounded corners */
+}
+
+#pagePreview:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Win95 Window */
+.win95-window {
+    background: #fdfdfd; /* Clean white for a fresh look */
+    border: 2px solid #d4aaff; /* Soft pastel purple border */
+    margin: auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    position: relative;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px; /* More rounded for modern retro feel */
+    overflow: hidden;
+    width: 800px;
+}
+
+/* Title Bar */
+.win95-titlebar {
+    background: #c3b5ff; /* Softer pastel blue */
+    color: #2a2a2a; /* Darker text for contrast */
+    padding: 12px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 6px;
+    font-size: 18px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Window Content */
+.win95-content {
+    background-color: white;
+    padding: 20px;
+    border: none;
+    position: relative;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}
+/* Custom Sections */
+#customSections {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 24px; /* More spaced-out layout */
+    margin-top: 30px;
+}
+
+.section-box {
+    padding: 20px;
+    background: #ffffff;
+    min-width: 150px; /* Smaller default width */
+    max-width: 100%;
+    min-height: 50px;
+    position: relative;
+    cursor: move;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    color: #3c3c3c;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    resize: both;
+    width: auto; /* Allows resizing but prevents it from being too wide */
+    max-width: 100%;
+    background-color: #fdfdfd;
+    border: 2px solid #ccc;
+    overflow: hidden; /* Prevents overflow issues */
+    box-sizing: border-box;
+}
+
+.section-text {
+    width: 100%; /* Make sure it takes the full width of the parent */
+    word-wrap: break-word; /* Ensures text wraps within the box */
+    overflow-wrap: break-word; /* Alternative for better compatibility */
+    white-space: normal; /* Allows text to wrap to new lines */
+    display: block; /* Ensures it behaves like a normal text container */
+}
+
+
+/* Ensure paragraph text inside wraps properly */
+.section-box p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    width: 100%;
+}
+/* Section Box Hover */
+.section-box:hover {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+    background: #f7ddff; /* Lighter gray on hover */
+}
+
+/* Resize Handle */
+.resize-handle {
+    width: 20px;
+    height: 20px;
+    background-color: #ffb5fa; 
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    cursor: se-resize;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.resize-handle:hover {
+    transform: scale(1.2);
+}
+
+/* Anonymous Boxes (Fixed at Bottom Corners) */
+#anonBoxesContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Anonymous Drawing Box */
+#anonDrawBox {
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    background-color: #ffffff;
+    border: 2px solid #454040;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Buttons */
+button {
+    background-color: #ff8ba3; 
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #ff6b87;
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Cute Icon Button */
+button.icon-button {
+    background-color: #d4aaff; 
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button.icon-button:hover {
+    background-color: #bfa6ff;
+}
+
+
+/* Inputs */
+input[type="text"], textarea {
+    padding: 12px;
+    font-size: 14px;
+    width: 100%; /* Allow the input to fill the container, but will respect max-width */
+    max-width: 100%; /* Ensure it doesn't stretch beyond its parent */
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 2px solid #ff8ba3;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    resize: vertical; /* Allow vertical resizing if needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width */
+    overflow-wrap: break-word; /* Ensure text wraps inside the input field */
+}
+
+/* Focused state for inputs */
+input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #ff6b87;
+    box-shadow: 0px 0px 10px rgba(255, 107, 135, 0.6);
+}
+
+/* Ensure text area wraps text properly */
+textarea {
+    overflow-wrap: break-word; /* Ensure text wraps inside the textarea */
+    word-wrap: break-word; /* Older support for text wrapping */
+    white-space: pre-wrap; /* Allow text to wrap and preserve white spaces */
+    resize: both; /* Allow resizing of textarea */
+    box-sizing: border-box; /* Ensure padding and border are included */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .win95-window {
+        width: 100%;
+        max-width: 100%;
+        min-height: 500px;
+        padding: 20px;
+    }
+
+    #pagePreview {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    #customizationBar {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .section-box {
+        min-width: 150px;
+        min-height: 150px;
+    }
+
+    #anonDrawBox {
+        width: 100%;
+        height: 100%;
+    }
+}
+/* Background and Text Color Picker Wrapper */
+#bgColorPickerWrapper, #textColorPickerWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between elements */
+}
+
+/* Background Color Picker */
+#bgColorPicker {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Fully circular */
+    border: 2px solid #ddd; /* Light border */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f7f7f7; /* Default light gray background */
+}
+
+#bgColorPicker:hover {
+    border-color: #aaa; /* Slightly darker border on hover */
+}
+
+/* Text Color Picker */
+#textColorPicker {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Fully circular */
+    border: 2px solid #ddd; /* Light border */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f7f7f7; /* Default light gray background */
+}
+
+#textColorPicker:hover {
+    border-color: #aaa; /* Slightly darker border on hover */
+}
+
+/* Transparent Button */
+#transparentButton {
+    padding: 6px 12px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #555;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#transparentButton:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+#transparentButton:active {
+    background-color: #e0e0e0; /* Darker gray when clicked */
+}
+
+/* Close/Delete Button (X icon) */
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 16px; /* Smaller size */
+    height: 16px; /* Smaller size */
+    font-size: 12px;
+    background-color: #f44336; /* Red color for delete */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Ensure the X icon stays small and in the top-right corner */
+.delete-button i {
+    font-size: 12px; /* Icon size smaller */
+}
+
