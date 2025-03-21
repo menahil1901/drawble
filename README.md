@@ -1,23 +1,19 @@
-Drawble is a customizable page editor that allows users to create, save, and share custom pages with unique codes. Users can modify titles, bios, and color schemes with live previews. The drag-and-drop UI makes it easy to personalize pages, offering a seamless user experience.
+# Drawble | Custom Page Editor
 
-Features:
+**Tech Stack**: HTML5, CSS3, JavaScript
 
-Create, save, and share custom pages with unique codes.
-Modify titles, bios, and color schemes with live preview.
-Drag-and-drop interface for easy page customization.
-Tech Stack:
+## Description
+Drawble is a custom page editor that allows users to create, save, and share custom pages with unique codes. It features a drag-and-drop UI for easy customization, a live preview of changes, and the ability to modify titles, bios, and color schemes on the fly.
 
-Frontend: HTML5, CSS3, Bootstrap
-Backend: Node.js, Express.js
-Database: DynamoDB (NoSQL)
-Authentication: Amazon Cognito, OAuth 2.0
-Cloud & DevOps: AWS Lambda, API Gateway, EventBridge, Serverless Architecture
-Testing: Jest
-Setup:
+## Features
+- ✔️ **Create, Save, and Share** custom pages with unique URLs.
+- ✔️ **Live Preview** to instantly view changes while editing.
+- ✔️ **Drag-and-Drop UI** for easy customization of page elements.
+- ✔️ Modify titles, bios, and color schemes for personalized content.
 
-Clone the repository:
-git clone https://github.com/menahil1901/drawble.git
-Install dependencies:
-npm install
-Run the app:
-npm start
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/menahil1901/drawble.git
+
